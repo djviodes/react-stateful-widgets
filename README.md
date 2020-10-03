@@ -24,10 +24,10 @@ This project includes a `src/components` folder containing several React compone
 - [X] CD into the project base directory.
 - [X] Download project dependencies by running `npm install`.
 - [X] Start up the app using `npm start`.
-- [ ] Optionally run tests using `npm test`. (The app must be running on `http://localhost:1234`)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [X] Optionally run tests using `npm test`. (The app must be running on `http://localhost:1234`)
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: `git push origin <firstName-lastName>`.
 
 ### Task 2a: Minimum Viable Product
 
