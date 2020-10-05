@@ -28,13 +28,13 @@ export default function Squares() {
   const [squares, setSquares] = useState(listOfSquareIds)
   const [activeSquare, setActiveSquare] = useState(null)
 
-  const getClassName = id => {
+  const isActive = id => {
     // This is NOT a click handler but a helper, used inside the JSX (see below).
     // It should return a string containing the class name of 'active', if the id passed
     // as the argument matches the active square in state, empty string otherwise.
     // Right-click and "inspect element" on the square to see its effect.
 
-    activeSquare === id ? `${id}` : ''
+    return activeSquare === id ? 'active' : ''
   };
 
   const markActive = id => {
@@ -43,7 +43,7 @@ export default function Squares() {
     // (unless it already is, in which case we should reset
     // the currently active square id back to initial state).
 
-    setActiveSquare(id)
+    setActiveSquare(id != activeSquare ? id : null)
   };
 
   return (
@@ -58,7 +58,7 @@ export default function Squares() {
             <div
               id={id}
               key={id}
-              className={`square${getClassName(id)}`}
+              className={`square ${isActive(id)}`}
               onClick={() => markActive(id)}
             >
             </div>
